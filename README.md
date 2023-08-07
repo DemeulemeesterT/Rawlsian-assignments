@@ -11,7 +11,7 @@ The code uses the Gurobi optimization software (version 9.1.1), and calls it fro
 
 ## Use
 The one-sided matching instance for which you want to compute the Rawlsian assignment can be read from a .csv file. To read in a data file, there are two options:
-* `rank`: each column of the file represents an object, and the corresponding number indicated the position of the object in the preference list of an agent. Preference list 3,1,2 refers in this setting to object b being most preferred, then object c, and object a is least preferred.
+* `rank`: each column of the file represents an object, and the corresponding number indicated the position of the object in the preference list of an agent. Preference list $(3,1,2)$ refers in this setting to object b being most preferred, then object c, and object a is least preferred.
 * `list`: the objects are listed from most preferred to least preferred. Preference list 3,1,2 refers to object c being most preferred, then object a, and object b being least preferred. 
 
 
