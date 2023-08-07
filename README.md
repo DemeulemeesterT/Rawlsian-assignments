@@ -1,6 +1,6 @@
 # Rawlsian assignments
 
-This code can be used to compute the Rawlsian assignment from a given one-sided matching instance using the algorithm as described in the paper by [Demeulemeester & Pereyra (2023)][3].
+This code can be used to compute the Rawlsian assignment from a given one-sided matching instance using the algorithm as described in the accompanying paper by [Demeulemeester & Pereyra (2023)][3].
 
 [3]: https://arxiv.org/abs/2207.02930
 
