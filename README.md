@@ -11,7 +11,13 @@ The code uses the Gurobi optimization software (version 9.1.1), and calls it fro
 
 ## Use
 The one-sided matching instance for which you want to compute the Rawlsian assignment can be read from a .csv file. To read in a data file, there are two options:
-* `rank`: each column of the file represents an object, and the corresponding number indicated the position of the object in the preference list of an agent. Preference list $(3,1,2)$ refers in this setting to object b being most preferred, then object c, and object a is least preferred.
-* `list`: the objects are listed from most preferred to least preferred. Preference list 3,1,2 refers to object c being most preferred, then object a, and object b being least preferred. 
+* `rank`: each column of the file represents an object, and the corresponding number indicated the position of the object in the preference list of an agent. Assuming three objects $a,b,c$, preference list (3,1,2) refers in this setting to object $b$ being most preferred, then object $c$, and object $a being least preferred.
+* `list`: the objects are listed from most preferred to least preferred. Preference list (3,1,2) refers to object $c$ being most preferred, then object $a$, and object $b$ being least preferred. 
 
-
+A simple working example to compute and to visualize the Rawlsian assignment is:
+```
+file_name = "Example_SP_axioms.csv"
+MyData = Data(file_name, "list")
+Sol = Rawls(MyData)
+Sol.visualize()
+```
